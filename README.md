@@ -1,2 +1,2 @@
 # boolean-autocrats
- washuclass one project
+ washu class project one
