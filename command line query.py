@@ -29,7 +29,13 @@ stock_df['Date'] = pd.to_datetime(stock_df['Date']).astype(np.int64)
 for ticker in ticker_list:
     loop_df =stock_df.loc[stock_df["Ticker"] == ticker] 
     f = np.polyfit(loop_df['Date'], loop_df['Close'], deg=1)
-    print(f"The trend line slope of {ticker} is {f[0]}")       
-    #display(loop_df)         
-               
+    q = np.polyfit(loop_df['Date'], loop_df['Volume'], deg=1)
+    ticker_max = loop_df['Close'].max()
+    ticker_low = loop_df['Close'].min()
+    close_last = loop_df["Close"].iloc[-1]
+    print(f"The volume trend line slope of {ticker} is {q[0]}")
+    print(f"The price trend line slope of {ticker} is {f[0]}")       
+    print(f"The period low price of {ticker} is {ticker_low}")
+    print(f"The period high price of {ticker} is {ticker_max}")
+    print(f"The most recent price of {ticker} is {close_last}")
 
