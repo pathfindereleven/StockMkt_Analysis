@@ -22,5 +22,5 @@ Stock data for Airlines: Delta, American, Southwest, and United pre and post Cov
 # Resources Utilized 
 - https://stackoverflow.com/questions/61184056/how-to-plot-two-bar-graphs-side-by-side-with-columns-from-different-dataframes-i
   https://stackoverflow.com/questions/44076203/getting-percentages-in-legend-from-pie-matplotlib-pie-chart
-  
+  https://finance.yahoo.com/
 
